@@ -1,4 +1,12 @@
 ﻿#include <iostream>
+#include <fstream>
+#include <iomanip>
+#include <string>
+
+#include "base.h"
+#include "AsciiDisplay.h"
+#include "BinaryDisplay.h"
+
 using namespace std;
 /*
 Виртуальные функции
@@ -12,6 +20,32 @@ void Display(const char * path)
 path – путь к файлу
 
 Потомки создают свою реализацию виртуальной функции.*/
-int main()
-{
+int main() {
+    Base* base = new Base();
+    Base* ascii = new AsciiDisplay();
+    Base* binary = new BinaryDisplay();
+
+    const char* path = "example.txt";
+    try {
+
+    base->Display(path);
+    ascii->Display(path);
+    binary->Display(path);
+
+    }
+    catch (const system_error&e) {
+		cout << "System error occurred: " << e.what() << endl;
+    }
+    catch (const exception& e) {
+        cout << "Exception occurred: " << e.what() << endl;
+    }
+	catch (...) {
+		cout << "Unknown error occurred." << endl;
+	}
+
+    delete base;
+    delete ascii;
+    delete binary;
+
+    return 0;
 }

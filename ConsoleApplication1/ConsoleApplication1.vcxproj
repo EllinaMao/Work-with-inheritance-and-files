@@ -127,7 +127,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="AsciiDisplay.cpp" />
+    <ClCompile Include="base.cpp" />
     <ClCompile Include="ConsoleApplication1.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AsciiDisplay.h" />
+    <ClInclude Include="base.h" />
+    <ClInclude Include="BinaryDisplay.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
