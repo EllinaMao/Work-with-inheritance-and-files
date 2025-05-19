@@ -25,7 +25,7 @@ int main() {
     Base* ascii = new AsciiDisplay();
     Base* binary = new BinaryDisplay();
 
-    const char* path = "example.txt";
+    const char* path = "Example.txt";
     try {
 
     base->Display(path);
