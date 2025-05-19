@@ -29,7 +29,11 @@ int main() {
     try {
 
     base->Display(path);
+    system("pause");
+	system("cls");
     ascii->Display(path);
+    system("pause");
+    system("cls");
     binary->Display(path);
 
     }

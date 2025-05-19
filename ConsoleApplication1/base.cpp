@@ -13,7 +13,7 @@ void Base::Display(const char* path)
     while (getline(file, line)) {
         cout << line << endl;
     }
-
+    
 	cout << string(15, '-') << endl;
     file.close();
 }

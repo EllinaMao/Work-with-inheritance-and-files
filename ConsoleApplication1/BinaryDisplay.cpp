@@ -14,6 +14,6 @@ void BinaryDisplay::Display(const char* path)
 		}
 		cout << " ";
 	}
-	cout << string(15, '-') << endl;
+	cout << endl << string(15, '-') << endl;
 	file.close();
 }

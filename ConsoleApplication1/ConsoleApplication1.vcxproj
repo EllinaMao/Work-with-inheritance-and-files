@@ -129,6 +129,7 @@
   <ItemGroup>
     <ClCompile Include="AsciiDisplay.cpp" />
     <ClCompile Include="base.cpp" />
+    <ClCompile Include="BinaryDisplay.cpp" />
     <ClCompile Include="ConsoleApplication1.cpp" />
   </ItemGroup>
   <ItemGroup>

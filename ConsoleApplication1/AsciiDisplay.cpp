@@ -12,7 +12,7 @@ char ch;
 while (file.get(ch)) {
 	cout << static_cast<int>(ch) << " ";
 }
-cout << string(15, '-') << endl;
+cout<< endl << string(15, '-') << endl;
 
 file.close();
 }
